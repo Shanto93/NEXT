@@ -1,9 +1,3 @@
-"use client"
-
-export default function Home() {
-  return (
-    <div>
-      <p>Hello World</p>
-    </div>
-  );
+export default function Home(){
+    return <h3>Welcome</h3>
 }
