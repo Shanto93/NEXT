@@ -20,3 +20,20 @@ const PhonePage = ({ params }: PhoneProps) => {
 };
 
 export default PhonePage;
+
+type PhonePropsMeta = {
+  params: {
+    productId: string;
+    phone: string;
+  };
+};
+
+export async function generateMetadata({
+  params,
+}: PhonePropsMeta): Promise<{ title: string; description: string }> {
+  const { productId, phone } = params;
+  return {
+    title: `Phone ${productId} & ${phone}`,
+    description: `Description of the ${phone}`,
+  };
+}
