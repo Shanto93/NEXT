@@ -1,3 +1,7 @@
-export default function Home(){
-    return <h3>Welcome</h3>
+export default function Home() {
+  return (
+    <div>
+      <h1 className="text-red-400">Hello world!</h1>
+    </div>
+  );
 }
