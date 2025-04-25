@@ -1,12 +1,13 @@
 import Link from "next/link";
+import "../styles/global.css"
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-red-400">Home Page</h1>
+    <div className="px-10">
+      <h1 className="text-2xl font-bold text-red-400 text-center">Home Page</h1>
 
-      <Link href="/articles">Article</Link>
-      <ul>
+      <Link className="text-xl text-red-500" href="/articles">Articles</Link>
+      <ul className="pl-7 underline text-blue-500">
         <Link href="/articles/news-123?lan=en">
           <li>English</li>
         </Link>
